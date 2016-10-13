@@ -1,0 +1,58 @@
+<#include 'common/header.html' />
+<@css src="css/help.css" />
+	<div class="content">
+<!--帮助中心-->
+<div class="besides">
+	<div id="help2_wh">
+    	<ul>
+        	<li class="help_img"><a href="help-3-1.html"><@image src="images/bzzx.jpg" alt="帮助中心图标" /></a></li>
+            <li class="help_li1"><span>新手上路</span></li>
+            ${widget_h1}
+        </ul>
+        <ul>
+        	<li class="help2_li2"><@image style="float:left;" src="images/help_line_bj.jpg" /></li>
+            <li class="help_li1"><span>优惠活动</span></li>
+           	${widget_h2}
+        </ul>
+        <ul>
+        	<li class="help2_li2"><@image style="float:left;" src="images/help_line_bj.jpg" /></li>
+            <li class="help_li1"><span>付款方式</span></li>
+            ${widget_h3}
+        </ul>
+        <ul>
+        	<li class="help2_li2"><@image style="float:left;" src="images/help_line_bj.jpg" /></li>
+            <li class="help_li1"><span>配送服务</span></li>
+            ${widget_h4}
+        </ul>
+        <ul>
+        	<li class="help2_li2"><@image style="float:left;" src="images/help_line_bj.jpg" /></li>
+            <li class="help_li1"><span>我的订单</span></li>
+            ${widget_h5}
+        </ul>
+        <ul>
+        	<li class="help2_li2"><@image style="float:left;" src="images/help_line_bj.jpg" /></li>
+            <li class="help_li1"><span>售后服务</span></li>
+            ${widget_h6}
+        </ul>
+        <ul>
+        	<li class="help2_li2"><@image style="float:left;" src="images/help_line_bj.jpg" /></li>
+            <li class="help_li1"><span>关于我们</span></li>
+            ${widget_h7}
+        </ul>
+        <ul class="help2_ul6"></ul>
+    </div>
+	<div class="client">
+		
+		${widget_help_right}
+	</div>
+<script type="text/javascript">
+$(function(){
+	var url = location.href;
+	url = url.replace(".html","");
+	var arr=url.split("/help");
+	$("#help"+arr[1]).attr("class","help_spanson");
+});
+</script>
+</div>
+</div>
+	<#include 'common/footer.html' />
